@@ -7,6 +7,11 @@ const CharDiv = styled.div`
   justify-content: space-around;
   background-color: rgba(245, 245, 245, 0.75);
   margin: 5% 0 5% 0;
+  color: #a05735;
+`;
+
+const P = styled.p`
+  color: #3f332e;
 `;
 
 const CharacterContainer = props => {
@@ -15,10 +20,10 @@ const CharacterContainer = props => {
   return (
     <CharDiv>
       <h3>{char}</h3>
-      <p>Eye Color: {eyeColor}</p>
-      <p>Skin Color: {skinColor}</p>
-      <p>Hair Color: {hairColor}</p>
-      <p>Height: {height}</p>
+      <P>Eye Color: {eyeColor}</P>
+      <P>Skin Color: {skinColor}</P>
+      <P>Hair Color: {hairColor}</P>
+      <P>Height: {height}</P>
     </CharDiv>
   );
 };

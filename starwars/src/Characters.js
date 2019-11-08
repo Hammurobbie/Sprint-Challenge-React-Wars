@@ -10,7 +10,7 @@ const Characters = () => {
       .get("https://swapi.co/api/people/")
       .then(response => {
         setData(response.data.results);
-        console.log(response.data.results);
+        console.log(response.data.next);
       })
       .catch(error => {
         console.log("The data was not returned.");
